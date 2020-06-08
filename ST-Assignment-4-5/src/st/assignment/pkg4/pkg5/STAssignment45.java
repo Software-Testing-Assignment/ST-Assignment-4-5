@@ -18,7 +18,7 @@ public class STAssignment45 {
         {
             flag1=0;
         }
-        if(hour>=12 && minute>=0 && second >=1)
+        if(hour>=12 && minute>0 && second >=1)
         {
             flag2=1;
         }
@@ -28,11 +28,12 @@ public class STAssignment45 {
         }
         if(flag1==1 && flag2==1)
         {
-            System.out.println("CONGRATULATION SUMMONER YOU HAVE ACHIEVED DIAMOND RANK!!! ");
+            System.out.println("CONGRATULATIONS! Diamond Rank ");
+
         }
         else
         {
-            System.out.println("Sorry Summoner, you weren't promoted to Diamond Rank.");
+            System.out.println("Demoted ! Gold Rank.");
         }
         
     }
@@ -44,7 +45,9 @@ public class STAssignment45 {
         int minute=25;
         int second=50;
         int flag1=0,flag2=0;
+        
         System.out.println("TIME FORMATE : 24 hours formate");
+        System.out.println("");
         System.out.println("KILLS | DEATH | ASSIST");
         System.out.println("");
         System.out.print("Current Rank of Player:");
@@ -62,7 +65,7 @@ public class STAssignment45 {
         {
             flag1=1;
         }
-        if(hour>=12 && kill <=24 && minute>=0 && minute <= 60 && second>=1 && second <=60)
+        if(hour>=12 && kill <=24 && minute>0 && minute <= 60 && second>=1 && second <=60)
         {
             flag2=1;
         }
@@ -74,6 +77,9 @@ public class STAssignment45 {
         {
             System.out.println("Better luck next time summoner as it didn't meet the requirements.");
         }
+        System.out.println("");
+        System.out.print("Current Rank of Player:");
+        System.out.println("Diamond");
         System.out.println("");
     }
 }
