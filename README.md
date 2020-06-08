@@ -1,3 +1,3 @@
 <h1>Code Description</h1>
 This code is a log checker where it takes time (hour, minute, second) and the KDA (kill, death, assist) of the player in order to find that if the player has reached Diamond Rank or not. As the rank of the game is updated after the time 1200 hrs. If the player rank is updated, the log will then return a message saying that the player has successfully reached Diamond Rank. <br><br>
-To achieve Diamond Rank, the kills should be above 15, deaths should be equal or less than 6 and assist should be greater than or equal 8. The time is in the 24-hour format, where the rank updation is checked after 1200 hr.<br><br>
+To achieve Diamond Rank, the kills should be in between 15 to 50 where 15 and 50 are included, deaths should be equal or less than 6 and assist should be in between 8 to 30 where 8 and 30 is included. The time is in the 24-hour format, where the rank updation is done after 1200 hr.<br><br>
