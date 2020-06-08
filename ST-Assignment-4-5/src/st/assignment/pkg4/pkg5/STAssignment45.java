@@ -47,7 +47,7 @@ public class STAssignment45 {
         System.out.println("Log Checked Successfully!!");
         System.out.println("");
         
-        if(kill>15 && kill <=50 || death>=0 && death <=6 || assist>=8 && assist <=30)
+        if(kill>=15 && kill <=50 || death>=0 && death <=6 || assist>=8 && assist <=30)
         {
             flag1=1;
         }
