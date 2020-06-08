@@ -10,11 +10,11 @@ public class STAssignment45 {
     public static void logChecker(int kill,int death,int assist, int hour, int minute, int second )
     {
         int flag1=0, flag2=0;
-        if(kill > 15 && death <= 6 && assist >= 8)
+        if(kill >= 15 && death <= 6 && assist >= 8)
         {
             flag1=1;
         }
-        if(hour>12 && minute>=0 && second >=0)
+        if(hour>=12 && minute>=0 && second >=1)
         {
             flag2=1;
         }
@@ -47,11 +47,11 @@ public class STAssignment45 {
         System.out.println("Log Checked Successfully!!");
         System.out.println("");
         
-        if(kill>=15 && kill <=50 || death>=0 && death <=6 || assist>=8 && assist <=30)
+        if(kill>=15 && kill <=50 && death>=0 && death <=6 && assist>=8 && assist <=30)
         {
             flag1=1;
         }
-        if(hour>=12 && kill <=24 || minute>=0 && minute <= 60 || second>=1 && second <=60)
+        if(hour>=12 && kill <=24 && minute>=0 && minute <= 60 && second>=1 && second <=60)
         {
             flag2=1;
         }
