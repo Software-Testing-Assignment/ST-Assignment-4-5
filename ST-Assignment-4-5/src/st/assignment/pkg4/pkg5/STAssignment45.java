@@ -36,7 +36,7 @@ public class STAssignment45 {
         int minute=25;
         int second=50;
         int flag1=0,flag2=0;
-        System.out.println("24 hours formate");
+        System.out.println("TIME FORMATE : 24 hours formate");
         System.out.println("KILLS | DEATH | ASSIST");
         System.out.println("");
         System.out.print("Current Rank of Player:");
@@ -51,7 +51,7 @@ public class STAssignment45 {
         {
             flag1=1;
         }
-        if(hour>=1 && kill <=24 || minute>=0 && minute <= 60 || second>=0 && second <=60)
+        if(hour>=12 && kill <=24 || minute>=0 && minute <= 60 || second>=1 && second <=60)
         {
             flag2=1;
         }
