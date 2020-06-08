@@ -14,9 +14,17 @@ public class STAssignment45 {
         {
             flag1=1;
         }
+        else
+        {
+            flag1=0;
+        }
         if(hour>=12 && minute>=0 && second >=1)
         {
             flag2=1;
+        }
+         else
+        {
+            flag2=0;
         }
         if(flag1==1 && flag2==1)
         {
@@ -47,6 +55,9 @@ public class STAssignment45 {
         System.out.println("Log Checked Successfully!!");
         System.out.println("");
         
+        // These are just restriction for the inputed values so that the user 
+        // wont input a very high value
+        
         if(kill>=15 && kill <=50 && death>=0 && death <=6 && assist>=8 && assist <=30)
         {
             flag1=1;
@@ -61,7 +72,7 @@ public class STAssignment45 {
         }
         else
         {
-            System.out.println("Better luck next time summoner.");
+            System.out.println("Better luck next time summoner as it didn't meet the requirements.");
         }
         System.out.println("");
     }
