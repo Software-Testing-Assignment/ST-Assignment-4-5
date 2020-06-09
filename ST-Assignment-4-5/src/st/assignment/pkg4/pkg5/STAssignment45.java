@@ -7,9 +7,10 @@ package st.assignment.pkg4.pkg5;
  */
 public class STAssignment45 {
 
-    public static void logChecker(int kill,int death,int assist, int hour, int minute, int second )
+    public static String logChecker(int kill,int death,int assist, int hour, int minute, int second )
     {
         int flag1=0, flag2=0;
+        String retValue="";
         if(kill >= 15 && death <= 6 && assist >= 8)
         {
             flag1=1;
@@ -28,14 +29,13 @@ public class STAssignment45 {
         }
         if(flag1==1 && flag2==1)
         {
-            System.out.println("CONGRATULATIONS! Diamond Rank ");
-
+            retValue="CONGRATULATIONS! Diamond Rank ";
         }
         else
         {
-            System.out.println("Demoted ! Gold Rank.");
+            retValue="Demoted ! Gold Rank.";
         }
-        
+        return retValue;
     }
     public static void main(String[] args) {
         int kill=16;
@@ -71,7 +71,7 @@ public class STAssignment45 {
         }
         if(flag1==1 && flag2==1)
         {
-            logChecker(kill,death,assist,hour,minute,second);
+            System.out.println(logChecker(kill,death,assist,hour,minute,second));
         }
         else
         {
