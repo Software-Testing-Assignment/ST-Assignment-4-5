@@ -26,6 +26,7 @@ public class STAssignment45Test {
     @Before
     public void  beforeDisplay(){
          System.out.println("Function are being tested.");
+       
     }
     
     @After
@@ -38,6 +39,13 @@ public class STAssignment45Test {
      */
     @Test
     public void testLogChecker() {
+         int[] kills = {16,18,20,22,10,9,11,12};
+         int[] death = {3,5,8,9,2,3,10,11};
+         int[] assist = {11,5,10,3,13,2,18,1};
+         int[] hour = {13,15,18,20,6,2,1,5};
+         int[] min = {25,10,0,0,35,58,0,0};
+         int[] sec = {50,0,20,0,15,0,55,0};
+         
         System.out.println("logChecker");
       
         String expResult1 = "CONGRATULATIONS! Diamond Rank ";
@@ -46,26 +54,14 @@ public class STAssignment45Test {
         String result1 = STAssignment45.logChecker(16, 3, 11, 13, 25, 50);
         assertEquals(expResult1, result1);
         
-        String result2 = STAssignment45.logChecker(18,5,5,15,10,0);
-        assertEquals(expResult2, result2);
-        
-        String result3 = STAssignment45.logChecker(20,8,10,18,0,20);
-        assertEquals(expResult2, result3);
-        
-        String result4 = STAssignment45.logChecker(22,9,3,20,0,0);
-        assertEquals(expResult2, result4);
-        
-        String result5 = STAssignment45.logChecker(10,2,13,6,35,15);
-        assertEquals(expResult2, result5);
-        
-        String result6 = STAssignment45.logChecker(9,3,2,2,58,0);
-        assertEquals(expResult2, result6);
-        
-        String result7 = STAssignment45.logChecker(11,10,18,1,0,55);
-        assertEquals(expResult2, result7);
-        
-        String result8 = STAssignment45.logChecker(12,11,1,5,0,0);
-        assertEquals(expResult2, result8);
+        for(int i=1;i<8;i++)
+        {
+            String result=STAssignment45.logChecker(kills[i],death[i],assist[i],hour[i],min[i],sec[i]);
+             assertEquals(expResult2, result);
+        }
+//       
+//        
+//       
         
      
     }
