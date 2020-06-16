@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author abdul
+ * @author abdulrahman
  */
 public class STAssignment45Test {
     
@@ -59,10 +59,7 @@ public class STAssignment45Test {
             String result=STAssignment45.logChecker(kills[i],death[i],assist[i],hour[i],min[i],sec[i]);
              assertEquals(expResult2, result);
         }
-//       
-//        
-//       
-        
+      
      
     }
 
